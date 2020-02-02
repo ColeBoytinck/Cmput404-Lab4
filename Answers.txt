@@ -1,0 +1,8 @@
+1: https://github.com/ColeBoytinck/Cmput404-Lab4
+2: "The install worked successfully! Congratulations! You are seeing this page because DEBUG=True is in your settings file and you have not configured any URLs." And a little rocket
+3: / shows a 404 and /polls shows "Hello, world. You're at the polls index."
+4: Migrations are changing the database schema in order to fir changes made in the models
+5: I see a groups and users tables, as well as Choices and Questions under the "polls" section. To get models to appear, add them in the models document, migrate django, then reqister them in the admin document.
+6: /polls/38 shows "You're looking at question 38.", /polls/38/results shows "You're looking at the results of question 38.", polls/38/vote shows "You're voting on question 38.". Using a string gives us a 404. You could ask for a string instead of an int in urls.py to allow anything.
+7: A URL may change in the future, and you don't want to have to go through the entire codebase changing URL's, you want to do it in one place
+8: You don't have to create a whole new view if you are trying to display something that is simple. Generic views can be used if the view is simple enough. For complex views, you should create your own.
